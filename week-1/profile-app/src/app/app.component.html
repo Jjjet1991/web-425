@@ -1,15 +1,26 @@
+<!--
+=====================================================
+; Title: Assignment 1.5 Components
+; Author: Professor Krasso
+; Date 8 August 2021
+; Modified By: Jourdan Neal
+; Description: Building profile-app using components.
+=====================================================
+*/-->
+
+<!--Navbar with Home, about contact options.-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
   <ul class="navbar-nav">
-
+    <!--Home-->
     <li class="navbar-item active">
       <a class="nav-link"href="#">Home</a>
     </li>
-
+    <!--About-->
     <li class="navbar-item">
       <a class="nav-link"href="#">About</a>
     </li>
-
+    <!--Contact-->
     <li class="navbar-item">
       <a class="nav-link"href="#">Contact</a>
     </li>
@@ -17,17 +28,18 @@
   </ul>
 
 </nav>
-
+<!--Container containing body elements-->
 <div class="container" style="float:left">
   <br/><br/>
+  <!--Header referencing assignment variable-->
 <h2>{{ assignment }}</h2>
-
+<!--row-->
 <div class="row">
-
+<!--App-my-image left hand column-->
   <div class="col-sm-6">
     <app-my-image></app-my-image>
   </div>
-
+<!--App-my-details right hand column-->
   <div class="col-sm-6">
     <app-my-details></app-my-details>
   </div>
