@@ -1,0 +1,26 @@
+<!--
+=====================================================
+; Title: Assignment2.2 Data Binding
+; Author: Professor Krasso
+; Date 12 August 2021
+; Modified By: Jourdan Neal
+; Description: Using new person class to update enhanced profile app.
+=====================================================
+*/-->
+<!--Bootstrap unordered list-->
+<ul class="list-group">
+  <!--Full Name-->
+  <li class="list-group-item"><strong>Full Name:</strong> {{ myProfile.fullName }}</li>
+  <!--Favorite Food-->
+  <li class="list-group-item"><strong>Favorite Food:</strong> {{ myProfile.favoriteFood}} </li>
+  <!--Favorite Color-->
+  <li class="list-group-item"><strong>Favorite Color:</strong> {{ myProfile.favoriteColor}} </li>
+  <!--Keywords-->
+  <li class ="list-group-item">
+    <strong>Keywords:</strong>
+    <!--Iterate through keywords array.-->
+    <span *ngFor =" let word of myProfile.keywords">
+      {{ word }}
+    </span>
+  </li>
+</ul>
