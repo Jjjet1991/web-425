@@ -1,0 +1,35 @@
+<!--
+=====================================================
+; Title: Assignment 2.4 Routing in Action
+; Author: Professor Krasso
+; Date 13 August 2021
+; Modified By: Jourdan Neal
+; Description: Composer list, table with 2 columns for composer and genre/.
+=====================================================
+*/-->
+
+<!--Container for assignment elements-->
+<div class="container">
+  <br /> <br />
+  <table class="table table-bordered" style="width:600px">
+
+    <!--Column headers-->
+    <thead style="background-color: darkgray; color:white">
+    <tr>
+      <th scope="col"> Full name</th>
+      <th scope="col">Genre</th>
+    </tr>
+    </thead>
+
+    <!--Table body-->
+    <tbody>
+      <!--Iterate through composers array using *ngFor-->
+      <tr *ngFor="let composer of composers">
+        <td scope="row">{{ composer.fullName }}</td>
+        <td> {{ composer.genre }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+

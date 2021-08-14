@@ -1,0 +1,41 @@
+<!--
+=====================================================
+; Title: Assignment 2.4 Routing in Action
+; Author: Professor Krasso
+; Date 13 August 2021
+; Modified By: Jourdan Neal
+; Description: Composer application routes to Home, About, Contact.
+=====================================================
+*/-->
+
+<!--Create navigation bar.-->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: darkgray;">
+
+  <ul class="navbar nav">
+    <!--Link to Home-->
+    <li class="nav-item-active">
+      <a class="nav-link" routerLink='/composer-list' style="color: white;">Home</a>
+    </li>
+
+    <!--Link to About-->
+    <li class="nav-item">
+      <a class="nav-link" routerLink='/about' style="color: white;">About</a>
+    </li>
+
+    <!--Link to Contact Us-->
+    <li class="nav-item" >
+      <a class="nav-link" routerLink='/contact' style="color: white;">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+<!--Main body container containing assignment elements.-->
+<div class="container">
+<br /> <br /> <!--spacing for title-->
+  <!--Composer App Title-->
+  <h1>Composer App</h1>
+
+  <!--Router outlet to display different views.-->
+  <router-outlet></router-outlet>
+
+
+</div>
