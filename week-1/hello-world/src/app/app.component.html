@@ -1,41 +1,52 @@
+
+<!--/*
+=====================================================
+; Title: Assignment 1.3 Angular CLI
+; Author: Professor Krasso
+; Date 14 August 2021
+; Modified By: Jourdan Neal
+; Description: Creating Hello-World using Agular CLI.
+=====================================================
+*/-->
+<!--Navbar with links for home, about and contact us-->
 <nav class= "navbar navbar-expand-sm bg-dark navbar-dark">
 
+  <!--Home-->
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+    <!--About-->
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    <!--Contact Us-->
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
 
-<ul class="navbar-nav">
-  <li class="nav-item active">
-    <a class="nav-link" href="#">Home</a>
-  </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
-  </li>
+    </ul>
+    </nav>
+    <!--Container containing assignment elements.-->
+    <div class="container">
 
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contact Us</a>
-  </li>
+      <br><br>
+      <!--Title of exercise/-->
+      <h2>Exercise 1.3 - Hello World</h2>
+
+      <div class="row">
+
+        <div class="col-sm-12">
+          <!--Alert referencing myWorld variable.-->
+          <div class="alert alert-success">
+
+            <strong>Message: </strong><span>{{ myWorld }}</span>
+
+          </div>
 
 
-</ul>
-</nav>
-
-<div class="container">
-
-  <br><br>
-
-  <h2>Exercise 1.3 - Hello World</h2>
-
-  <div class="row">
-
-    <div class="col-sm-12">
-
-      <div class="alert alert-success">
-
-        <strong>Message: </strong><span>{{ myWorld }}</span>
-
+        </div>
       </div>
 
-
     </div>
-  </div>
-
-</div>

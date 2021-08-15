@@ -1,3 +1,12 @@
+/*
+=====================================================
+; Title: Assignment 1.3 Angular CLI
+; Author: Professor Krasso
+; Date 14 August 2021
+; Modified By: Jourdan Neal
+; Description: Creating Hello-World using Agular CLI.
+=====================================================
+*/
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +15,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  myWorld = "You are now in Jourdan Neal's world!!";
+  //Re-name the title variable myWorld and assign new value.
+  myWorld = "You are now in Jourdan Neal's World";
 }

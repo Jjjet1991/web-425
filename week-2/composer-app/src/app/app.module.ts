@@ -1,3 +1,13 @@
+/*
+=====================================================
+; Title: Assignment 2.4 Routing in Action
+; Author: Professor Krasso
+; Date 13 August 2021
+; Modified By: Jourdan Neal
+; Description: Composer application routes to Home, About, Contact.
+=====================================================
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

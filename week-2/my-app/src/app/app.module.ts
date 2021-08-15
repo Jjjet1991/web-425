@@ -1,3 +1,13 @@
+/*
+=====================================================
+; Title: Assignment 2.2- Navigation
+; Author: Professor Krasso
+; Date 12 August 2021
+; Modified By: Jourdan Neal
+; Description: Using router-outlet for navigation to different routes.
+=====================================================
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
