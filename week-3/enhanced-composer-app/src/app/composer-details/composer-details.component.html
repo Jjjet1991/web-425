@@ -1,0 +1,23 @@
+<!--/*
+=====================================================
+; Title: Assignment Exercise 3.2 - Passing Data to Routes, Part 1
+; Author: Professor Krasso
+; Date  August 2021
+; Modified By: Jourdan Neal
+; Description: Re-naming application and components of composer-app, passing data routes.
+; Creating Composer-details html page to display info about composer selected by composerId.
+=====================================================
+*/-->
+<div class="row">
+  <div class= "col-sm-12">
+    <!--List-group unordered list.-->
+    <ul class="list-group">
+      <!--List items with variables referring back to elements of Composer Class.-->
+      <li class="list-group-item"> Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item"> Full name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>

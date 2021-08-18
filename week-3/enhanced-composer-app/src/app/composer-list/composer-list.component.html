@@ -1,0 +1,43 @@
+<!--/*
+=====================================================
+; Title: Assignment Exercise 3.2 - Passing Data to Routes, Part 1
+; Author: Professor Krasso
+; Date  August 2021
+; Modified By: Jourdan Neal
+; Description: Re-naming application and components of composer-app, passing data routes.
+=====================================================
+*/-->
+
+
+<!--Container for assignment elements-->
+<div class="container">
+  <br /> <br />
+  <table class="table table-bordered" style="width:600px">
+
+    <!--Column headers-->
+    <thead style="background-color: darkgray; color:white">
+    <tr>
+      <!--adding row for Composer ID-->
+      <th scope="col">Composer ID</th>
+      <th scope="col">Full name</th>
+      <th scope="col">Genre</th>
+    </tr>
+    </thead>
+
+    <!--Table body-->
+    <tbody>
+      <!--Iterate through composers array using *ngFor-->
+      <tr *ngFor="let composer of composers">
+        <td scope="row">
+          <a routerLink="/composer-details/ {{ composer.composerId }}">
+          {{ composer.composerId }}
+          </a>
+        </td>
+        <td scope="row">{{ composer.fullName }}</td>
+        <td> {{ composer.genre }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
