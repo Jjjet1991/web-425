@@ -1,0 +1,15 @@
+/*
+  =====================================================
+  ; Title: Assignment 3.3 Passing Data Routes Part 2
+  ; Author: Professor Krasso
+  ; Date 22 August 2021
+  ; Modified By: Jourdan Neal
+  ; Description: Using Routes to pass data and create router guards. Styling for elements on sign in page.
+  =====================================================
+  */
+.signin-container{
+  width:35%;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 5px
+}
