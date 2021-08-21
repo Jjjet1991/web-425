@@ -1,3 +1,13 @@
+/*
+=====================================================
+; Title: Assignment 1.5 Components
+; Author: Professor Krasso
+; Date 8 August 2021
+; Modified By: Jourdan Neal
+; Description: My details list.
+=====================================================
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
