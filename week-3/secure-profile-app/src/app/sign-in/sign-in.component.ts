@@ -31,6 +31,7 @@ export class SignInComponent implements OnInit {
 
   //Create signin function.
   signin(){
+
     this.isLoggedIn = true;
     //If logged in is true, navigate to home page.
     this.router.navigate(['/home'], {queryParams:{isLoggedIn:this.isLoggedIn}, skipLocationChange:true})

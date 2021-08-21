@@ -1,0 +1,57 @@
+<!--
+  =====================================================
+  ; Title: Assignment 3.4 Guarding Routes
+  ; Author: Professor Krasso
+  ; Date 22 August 2021
+  ; Modified By: Jourdan Neal
+  ; Description: Creating guarding routes on enhanced-secure-profile app.
+  =====================================================
+  */-->
+
+<!--Move code from app.component.html-->
+
+
+<!--Navbar with Home, about contact options.-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <ul class="navbar-nav">
+    <!--Home-->
+    <li class="navbar-item active">
+      <a class="nav-link"href="#">Home</a>
+    </li>
+    <!--About-->
+    <li class="navbar-item">
+      <a class="nav-link"href="#">About</a>
+    </li>
+    <!--Contact-->
+    <li class="navbar-item">
+      <a class="nav-link"href="#">Contact</a>
+    </li>
+
+  </ul>
+
+</nav>
+<!--Container containing body elements-->
+<div class="container" style="float:left">
+  <br/><br/>
+  <!--Header referencing assignment variable-->
+<h2 style="text-align: center;">Exercise 3.4 - Guarding Routes</h2>
+<!--row-->
+<!--Remove the ngIf statement-->
+<div class="row">
+<!--App-my-image left hand column-->
+  <div class="col-sm-6">
+    <app-my-image></app-my-image>
+  </div>
+<!--App-my-details right hand column-->
+  <div class="col-sm-6">
+    <app-my-details></app-my-details>
+  </div>
+
+</div><!--row-->
+
+</div><!--container-->
+
+
+
+
