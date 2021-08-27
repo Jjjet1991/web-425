@@ -1,0 +1,42 @@
+<!--
+=====================================================
+; Title: Assignment 4.2 Inversion of Control and Dependency Injection
+; Author: Professor Krasso
+; Date 27 August 2021
+; Modified By: Jourdan Neal
+; Description: Using built in Dependency Injectors to create instance of service.
+=====================================================
+*/-->
+
+<!--Container for assignment elements-->
+<div class="container">
+  <br /> <br />
+  <table class="table table-bordered" style="width:600px">
+
+    <!--Column headers-->
+    <thead style="background-color: darkgray; color:white">
+    <tr>
+      <!--adding row for Composer ID-->
+      <th scope="col">Composer ID</th>
+      <th scope="col">Full name</th>
+      <th scope="col">Genre</th>
+    </tr>
+    </thead>
+
+    <!--Table body-->
+    <tbody>
+      <!--Iterate through composers array using *ngFor-->
+      <tr *ngFor="let composer of composers">
+        <td scope="row">
+          <a routerLink="/composer-details/ {{ composer.composerId }}">
+          {{ composer.composerId }}
+          </a>
+        </td>
+        <td scope="row">{{ composer.fullName }}</td>
+        <td> {{ composer.genre }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+

@@ -1,0 +1,41 @@
+<!--
+=====================================================
+; Title: Assignment 4.2 Inversion of Control and Dependency Injection
+; Author: Professor Krasso
+; Date 27 August 2021
+; Modified By: Jourdan Neal
+; Description: Using built in Dependency Injectors to create instance of service.
+=====================================================
+*/-->
+
+<!--Create navigation bar.-->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: darkgray;">
+
+  <ul class="navbar nav">
+    <!--Link to Home-->
+    <li class="nav-item-active">
+      <a class="nav-link" routerLink='/composer-list' style="color: white;">Home</a>
+    </li>
+
+    <!--Link to About-->
+    <li class="nav-item">
+      <a class="nav-link" routerLink='/about' style="color: white;">About</a>
+    </li>
+
+    <!--Link to Contact Us-->
+    <li class="nav-item" >
+      <a class="nav-link" routerLink='/contact' style="color: white;">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+<!--Main body container containing assignment elements.-->
+<div class="container">
+<br /> <br /> <!--spacing for title-->
+  <!--Composer App Title-->
+  <h1>{{ title }}</h1>
+
+  <!--Router outlet to display different views.-->
+  <router-outlet></router-outlet>
+
+
+</div>
