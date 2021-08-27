@@ -1,0 +1,49 @@
+<!--/*
+=====================================================
+; Title: Assignment 4.3 Handling Form Events with Observables
+; Author: Professor Krasso
+; Date 27 August 2021
+; Modified By: Jourdan Neal
+; Description: Using observables to handle form events. Demonstrating how observables "listen".
+=====================================================
+*/-->
+
+<!--Container for assignment elements-->
+<div class="container">
+  <br /> <br />
+  <div style="width:col-sm-12">
+  <!--Search box-->
+  <div class="textSearch">
+    <!--Input -->
+    <input type="text" id="textSearch" class="form-control" placeholder="Search by name" [formControl]="textSearchControl" />
+  </div>
+  </div>
+  <table class="table table-bordered" style="width:col-sm-12">
+
+    <!--Column headers-->
+    <thead style="background-color: darkgray; color:white">
+    <tr>
+      <!--adding row for Composer ID-->
+      <th scope="col">Composer ID</th>
+      <th scope="col">Full name</th>
+      <th scope="col">Genre</th>
+    </tr>
+    </thead>
+
+    <!--Table body-->
+    <tbody>
+      <!--Iterate through composers array using *ngFor-->
+      <tr *ngFor="let composer of composers">
+        <td scope="row">
+          <a routerLink="/composer-details/ {{ composer.composerId }}">
+          {{ composer.composerId }}
+          </a>
+        </td>
+        <td scope="row">{{ composer.fullName }}</td>
+        <td> {{ composer.genre }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
