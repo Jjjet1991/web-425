@@ -1,0 +1,24 @@
+<!--
+/*
+=====================================================
+; Title: Assignment 4.3 Handling Form Events with Observables
+; Author: Professor Krasso
+; Date 27 August 2021
+; Modified By: Jourdan Neal
+; Description: Using observables to handle form events. Demonstrating how observables "listen".
+=====================================================
+*/-->
+
+<div class="row">
+  <div class= "col-sm-12">
+    <!--List-group unordered list.-->
+    <ul class="list-group">
+      <!--List items with variables referring back to elements of Composer Class.-->
+      <li class="list-group-item"> Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item"> Full name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>

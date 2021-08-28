@@ -1,10 +1,10 @@
 /*
 =====================================================
-; Title: Assignment 4.3 Handling Form Events with Observables
+; Title: Assignment 4.4 Async PipeLine
 ; Author: Professor Krasso
-; Date 27 August 2021
+; Date 28 August 2021
 ; Modified By: Jourdan Neal
-; Description: Using observables to handle form events. Demonstrating how observables "listen".
+; Description: Using observables and build reactive application.
 =====================================================
 */
 
@@ -18,6 +18,8 @@ import { ComposerService } from '../composer.service';
 import { FormControl } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators'
 
+//Import statement for Observable
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -27,8 +29,11 @@ import { debounceTime } from 'rxjs/operators'
 })
 
 export class ComposerListComponent implements OnInit {
+
   //composers variable with value of array of IComposers.
-  composers: Array<IComposer>;
+
+  //Update composers variable type to Observable
+  composers: Observable<IComposer[]>;
 
   //Add another field
   textSearchControl= new FormControl('');
@@ -50,7 +55,8 @@ export class ComposerListComponent implements OnInit {
 
   //Create new filterComposers function
   filterComposers(name: string){
-    alert(name);
+    //call to composerService.filterComposers(name) function and assign results to composers variable
+    this.composers = this.composerService.filterComposers(name);
   }
 
 }

@@ -1,10 +1,10 @@
 /*
 =====================================================
-; Title: Assignment 4.3 Handling Form Events with Observables
+; Title: Assignment 4.4 Async PipeLine
 ; Author: Professor Krasso
-; Date 27 August 2021
+; Date 28 August 2021
 ; Modified By: Jourdan Neal
-; Description: Using observables to handle form events. Demonstrating how observables "listen".
+; Description: Using observables and build reactive application.
 =====================================================
 */
 
@@ -12,6 +12,14 @@ import { Injectable } from '@angular/core';
 
 //import statement for IComposer
 import { IComposer } from './composer.interface';
+
+
+//Add import statements for Observable and of from rxjs
+import { Observable} from 'rxjs';
+import { of } from 'rxjs';
+
+//Add import statement for map operator
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -34,22 +42,30 @@ export class ComposerService {
      { composerId: 103, fullName:"Cecile Chaminade", genre: "Classical"
      },
      { composerId: 102, fullName: "Francessca Caccini", genre: "Opera"
-     },
-
+     }
    ]
  }
-   //Create getComposers function
-   getComposers(){
-     return this.composers;
-   }
 
-   //Create getComposer function
-   getComposer(composerId:number) {
-     //for loop iterating through composers.
-     for (let composer of this.composers) {
-       if (composer.composerId === composerId){
-       return composer;
+ //Update return type of getComposers function, return observable array of IComposer objects
+  getComposers(): Observable<IComposer[]> {
+    return of(this.composers);
+  }
+
+  //getComposer function, with composerId data passed.
+   getComposer(composerID: number){
+     for (let composer of this.composers){
+       if (composer.composerId === composerID){
+         return composer;
        }
      }
+   }
+
+   //Create new function called filterComposers(name:String), return type Observable<IComposer[]>
+   filterComposers(name: string): Observable<IComposer[]> {
+     return of(this.composers).pipe(
+       //pipe(): allows chaining functions
+       //map(): return a new array of objects
+       //filter(): filter array of data
+       map(composers => composers.filter(composer => composer.fullName.toLowerCase().indexOf(name) > -1)))
    }
 }
