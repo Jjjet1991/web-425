@@ -22,13 +22,17 @@ import { Router, RouterModule } from '@angular/router';
 //Import FormsModule and ReactiveFormsModule from Angular
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ComposerListComponent,
     ContactComponent,
     AboutComponent,
-    ComposerDetailsComponent
+    ComposerDetailsComponent,
+
+
   ],
   imports: [
     BrowserModule,
