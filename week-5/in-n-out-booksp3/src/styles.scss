@@ -1,0 +1,53 @@
+/*
+=====================================================
+; Title: Assignment 5.3 Data Tables
+; Author: Professor Krasso
+; Date 5 September 2021
+; Modified By: Jourdan Neal
+; Description: Using Angular Material to create data table.
+=====================================================
+*/
+
+//Import statement for _theme.scss
+@import './theme';
+
+//Styling from _theme.scss
+html, body {
+  height: 100%;
+}
+
+body {
+   margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+//Blue color
+.blue {
+  color: #2196f3;
+}
+//Green Color
+.green {
+  color: #66BB6A;
+}
+//Attribution links color, text-decoration and hover.
+.attribution-link {
+  text-decoration: none;
+  color:white
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
+//Card title icon alignment and size.
+.card-title-icon {
+  text-align: center;
+}
+
+.card-title-icon, .mat-icon {
+  font-size: 72px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+
