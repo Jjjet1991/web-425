@@ -10,21 +10,21 @@
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutComponent } from './about.component';
+import { BookDetailsDialogComponent } from './book-details-dialog.component';
 
-describe('AboutComponent', () => {
-  let component: AboutComponent;
-  let fixture: ComponentFixture<AboutComponent>;
+describe('BookDetailsDialogComponent', () => {
+  let component: BookDetailsDialogComponent;
+  let fixture: ComponentFixture<BookDetailsDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
+      declarations: [ BookDetailsDialogComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutComponent);
+    fixture = TestBed.createComponent(BookDetailsDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

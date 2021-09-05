@@ -1,10 +1,10 @@
 /*
 =====================================================
-; Title: Assignment 5.3 Data Tables
+; Title: Assignment 5.4- Dialogs
 ; Author: Professor Krasso
 ; Date 5 September 2021
 ; Modified By: Jourdan Neal
-; Description: Using Angular Material to create data table.
+; Description: Creating dialog box to display book details and button to confirm/close.
 =====================================================
 */
 
@@ -29,13 +29,18 @@ import { MatIconModule } from '@angular/material/icon';
 
 //Import statements for MatTableModule
 import {MatTableModule } from '@angular/material/table';
+import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
+
+//Import statement for Dialog Module
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
     AppComponent,
     BookListComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    BookDetailsDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +57,9 @@ import {MatTableModule } from '@angular/material/table';
 
     //Add imported modules exercise 5.3
     MatTableModule,
+
+    //Add imported dialog module
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
