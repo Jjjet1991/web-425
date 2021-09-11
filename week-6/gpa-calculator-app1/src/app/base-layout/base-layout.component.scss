@@ -1,0 +1,21 @@
+/*
+=====================================================
+; Title: Assignment 6.3 Layouts
+; Author: Professor Krasso
+; Date 12 September 2021
+; Modified By: Jourdan Neal
+; Description: Re-usable layouts-auth-layout and base-layout, re-useable layouts w/ different routes(including chlildren).
+=====================================================
+*/
+
+/* Adding top margin for logo image */
+.logo {
+  margin-top: 5px;
+}
+
+/*Center main container, add padding and width*/
+.main-container {
+  padding-top:25px;
+  width: 80%;
+  margin: 0 auto;
+}

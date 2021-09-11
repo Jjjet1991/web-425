@@ -1,0 +1,42 @@
+<!--/*
+=====================================================
+; Title: Assignment 6.3 Layouts
+; Author: Professor Krasso
+; Date 12 September 2021
+; Modified By: Jourdan Neal
+; Description: Re-usable layouts-auth-layout and base-layout, re-useable layouts w/ different routes(including chlildren).
+=====================================================
+*/-->
+
+<mat-toolbar color="primary">
+  <!--Mat-Toolbar Row-->
+  <mat-toolbar-row>
+    <!--Logo height of 80-->
+    <div class="logo">
+      <img src="../../assets/gpa-calculator-app.png" alt="" height="80" />
+    </div>
+    <!--Toolbar row-wrap with button for Home-->
+    <div style="width:80%;">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <!--Button-->
+        <button mat-button routerLink="/">Home</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+<div fxLayout="row wrap">
+  <!--Container for card-->
+  <div fxFlex>
+    <!--Card-->
+    <mat-card class="main-container">
+      <!--Card-title referencing assignment variable-->
+      <mat-card-title> {{ assignment }}</mat-card-title>
+      <br /><br /> <!--Breaks for spacing-->
+      <!--Card-content will be a router-outlet-->
+      <mat-card-content><router-outlet></router-outlet></mat-card-content>
+    </mat-card>
+
+  </div>
+</div>
