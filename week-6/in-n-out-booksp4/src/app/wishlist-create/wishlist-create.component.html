@@ -1,0 +1,34 @@
+<!--/*
+=====================================================
+; Title: Assignment 6.2 Output Properties
+; Author: Professor Krasso
+; Date 12 September 2021
+; Modified By: Jourdan Neal
+; Description: Creating forms to capture user data and output user entries.
+=====================================================
+*/-->
+
+<!--Create a form, fxLayout of Column-->
+<form fxLayout="column" class="wishlist-create-form" style="width:60%;">
+
+  <!--Mat-form field for title-->
+  <mat-form-field fxFlex appearance="fill">
+    <!--Input box with label-->
+    <mat-label>Title:</mat-label>
+    <!--ngModel to capture wishlistItem.title-->
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+
+  <!--Mat-form field for authors-->
+  <mat-form-field fxFlex appearance="fill">
+    <!--Input box with label-->
+    <mat-label>Authors:</mat-label>
+    <!--ngModel to capture wishlistItem.title-->
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors">
+  </mat-form-field>
+
+  <!--Primary color button on click run addItem()-->
+  <button mat-button color="primary" (click)="addItem()">Add Item</button>
+
+
+</form>

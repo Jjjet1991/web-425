@@ -1,0 +1,21 @@
+/*
+=====================================================
+; Title: Assignment 6.2 Output Properties
+; Author: Professor Krasso
+; Date 12 September 2021
+; Modified By: Jourdan Neal
+; Description: Creating forms to capture user data and output user entries.
+=====================================================
+*/
+
+/*Margin for logo*/
+.logo {
+  margin-top: 5px;
+}
+
+/*Main container spacing*/
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}

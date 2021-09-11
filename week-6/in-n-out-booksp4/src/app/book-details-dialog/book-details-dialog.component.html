@@ -1,0 +1,39 @@
+<!--/*
+=====================================================
+; Title: Assignment 6.2 Output Properties
+; Author: Professor Krasso
+; Date 12 September 2021
+; Modified By: Jourdan Neal
+; Description: Creating forms to capture user data and output user entries.
+=====================================================
+*/-->
+
+<!--Div for elements-->
+<div fxFlex>
+  <!--Mat-card-->
+    <mat-card>
+    <!--Card-title, referencing book.title color blue-->
+    <mat-card-title class="blue"> {{ book.title }}</mat-card-title>
+    <!--Card-contents-->
+    <mat-card-content>
+      <!--FlexLayout- column with paragraphs for values of book object.-->
+      <div fxLayout="column">
+        <p>
+          ISBN: {{ book.isbn }}
+        </p>
+        <p>
+          Title: {{ book.title }}
+        </p>
+        <p>
+          Authors: {{ book.authors.join(",") }}
+        </p>
+
+      </div>
+    </mat-card-content>
+    <!--Card-actions-->
+    <mat-card-actions>
+      <!--add button-->
+      <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

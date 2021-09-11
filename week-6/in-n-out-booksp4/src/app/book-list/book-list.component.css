@@ -1,0 +1,19 @@
+/*
+=====================================================
+; Title: Assignment 6.2 Output Properties
+; Author: Professor Krasso
+; Date 12 September 2021
+; Modified By: Jourdan Neal
+; Description: Creating forms to capture user data and output user entries.
+=====================================================
+*/
+
+/*Styling for a-link*/
+.a-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*a-link hover*/
+.a-link:hover{
+  text-decoration: underline;
+}
