@@ -1,0 +1,29 @@
+/*
+=====================================================
+; Title: Assignment 7.3 Form Validation
+; Author: Professor Krasso
+; Date 17 September 2021
+; Modified By: Jourdan Neal
+; Description: Add data validation to the gpa-calculator-app, sign-in page.
+=====================================================
+*/
+
+/*Sign-in-container*/
+.sign-in-container{
+  width: 35%;
+  margin: 15% auto;
+}
+
+/*Message error*/
+.message-error{
+  margin: 10px 0;
+  padding: 12px;
+  color: #D8000c;
+  background-color: #FFd2d2;
+}
+
+/*Text-center-alignment--for any mat-card-title or mar-card-subtitle under sign-in-container*/
+.sign-in-container > mat-card-title, mat-card-subtitle {
+  text-align: center;
+
+}
