@@ -1,0 +1,19 @@
+/*Style for mat-card-title*/
+.mat-card-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 15px;
+  margin: 5px;
+  background-color: #651fff;
+}
+/*Styling for list of invoice services*/
+.list {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+/*Footer with logo image and company name*/
+.footer{
+  background-color: #f57f17;
+  text-align: center;
+}
+

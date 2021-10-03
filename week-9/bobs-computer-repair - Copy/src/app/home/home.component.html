@@ -1,0 +1,79 @@
+<!--/*
+=====================================================
+; Title: Assignment 9.3 Bob's Computer Repair Deliverable
+; Author: Professor Krasso
+; Date 3 October 2021
+; Modified By: Jourdan Neal
+; Description: Creating application to total user selected services from checkbox and add in values
+; for user inputted cost for parts and labor. Return a summary of all the charges to the user as
+; a dialogue box.
+=====================================================
+*/-->
+
+<div class="container">
+
+  <!--Toolbar in primary color-->
+  <mat-toolbar class="primary">
+    <mat-toolbar-row>
+      <!--Logo Image-->
+      <div  id="logo">
+        <img src="./assets/outline_computer_black_36dp.png">
+      </div>
+      <!--Title for Company Name-->
+      <div>
+        <h1>Bobs Computer Repair</h1>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <br>
+
+<!--Mat-Card-->
+<mat-card class="mat-elevation-z4">
+  <!--Card-Title-->
+  <mat-card-title>Services</mat-card-title>
+  <br><br>
+  <!--Card-Content-->
+  <mat-card-content>
+    <!--Create a form for checkbox Services-->
+    <form #checkboxForm="ngForm" (submit)="submit()">
+      <div fxLayout="row wrap">
+
+        <!--*ngFor statement to iterate through Services-->
+        <div *ngFor="let service of services">
+          <!--Create a checkbox for each service, value of amount, checked, and title-->
+          <mat-checkbox value="{{service.amount}}" [(ngModel)]="service.checked" [name]="service.title">
+
+           {{ service.title }}
+
+           {{ service.amount }}
+          </mat-checkbox>
+        </div>
+      </div>
+  <br>
+  <hr><!--Spacing and horizontal line for organization/readability.-->
+      <!--Input field for entry of parts cost-->
+      <div fxLayout="row wrap">
+        <mat-form-field appearance="fill">
+        <mat-label>Parts</mat-label>
+          <input matInput [(ngModel)]="invoice.parts" type="number" name="parts" />
+        </mat-form-field>
+      </div>
+      <!--Input field for entry of labor cost-->
+      <div fxLayout="row wrap">
+        <mat-form-field appearance="fill">
+        <mat-label>Labor</mat-label>
+          <input matInput [(ngModel)]="invoice.labor"  type="number" name="labor" />
+        </mat-form-field>
+      </div>
+  <br>
+      <!--Button to submit form choices-->
+      <mat-card-actions>
+        <button mat-flat-button class="calculate">Calculate</button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+  <br>
+  <br>
+  </mat-card>
+</div>

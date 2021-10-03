@@ -1,0 +1,45 @@
+/*
+=====================================================
+; Title: Assignment 9.3 Bob's Computer Repair Deliverable
+; Author: Professor Krasso
+; Date 3 October 2021
+; Modified By: Jourdan Neal
+; Description: Creating application to total user selected services from checkbox and add in values
+; for user inputted cost for parts and labor. Return a summary of all the charges to the user as
+; a dialogue box.
+=====================================================
+*/
+
+/*Primary color definition*/
+.primary {
+  background-color: #f57f17;
+}
+/*Styling for mat-card*/
+.mat-card {
+  width: 60%;
+  margin: auto;
+  padding: 15px;
+}
+/*Styling for mat-card-title*/
+.mat-card-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 15px;
+  margin: 5px;
+  background-color: #651fff;
+}
+/*Styling for Calculate Button*/
+.calculate{
+  background-color: #651fff;
+  float:right;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.5em;
+}
+/*Increase checkbox item font and line spacing*/
+.mat-checkbox {
+  font-size: 1.35em;
+  line-height: 2em;
+}
+
+

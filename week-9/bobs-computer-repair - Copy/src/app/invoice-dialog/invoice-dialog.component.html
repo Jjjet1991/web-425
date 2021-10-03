@@ -1,0 +1,44 @@
+
+<div>
+  <!--Container to hold everything-->
+  <div class="container">
+    <!--Mar-Card-->
+    <mat-card>
+      <!--Mar-card title-->
+      <mat-card-title>Invoice</mat-card-title>
+      <br><!--Spacing for organization/readability-->
+        <mat-card-content>
+          <!--ngFor iterate through service of services-->
+          <div *ngFor="let service of invoice.services" class="list">
+            <!--Non-breaking space display each checked service and its amount (currency)-->
+            &nbsp;{{ service.title }} ({{service.amount | currency}})
+          </div>
+          <br><!--Spacing for organization/readability-->
+          <hr>
+          <!--Services total-->
+          <div>
+            <h2><strong>Services:</strong> ({{ invoice.getServiceTotal() | currency }})</h2>
+          </div>
+          <!--Parts total-->
+         <div>
+           <h2><strong>Parts:</strong> ({{ invoice.getPartsTotal() | currency }})</h2>
+         </div>
+         <!--Labor total-->
+         <div>
+           <h2><strong>Labor:</strong> ({{ invoice.getLaborTotal() | currency }})</h2>
+         </div>
+         <br><!--Spacing for organization/readability-->
+         <hr>
+         <!--Invoice Total-->
+         <div style="background-color: lightgray; padding:5px;font-size:1.30em;text-align: right;">
+           <h2><strong>Total:</strong> ({{ invoice.getInvoiceTotal() | currency }})</h2>
+         </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!--Footer w/ logo image and company name-->
+  <div class="footer">
+    <img src="./assets/outline_computer_black_36dp.png" alt="">
+    <h1>Bob's Computer Repair</h1>
+  </div>
+</div>
